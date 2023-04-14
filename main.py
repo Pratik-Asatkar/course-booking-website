@@ -63,9 +63,7 @@ def form():
             "dob": request.form.get('dob'),
             "address": request.form.get('address'),
             "gender": request.form.get('gender'),
-            "course1":request.form.get('course1'),
-            "course2":request.form.get('course2'),
-            "course3":request.form.get('course3')
+            "course":request.form.get('course'),
         }
 
         utils.save_response(data)

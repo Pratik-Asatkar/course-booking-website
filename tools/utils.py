@@ -13,7 +13,7 @@ def current_time():
 def save_response(data):
     filename = "response.csv"
 
-    data_list = [data['name'], data['email'],data['dob'], data['address'], data['gender'], data['course1'], data['course2'], data['course3']]
+    data_list = [data['name'], data['email'],data['dob'], data['address'], data['gender'], data['course']]
 
     with open(filename, 'a', newline='\n') as csvfile:
         csvwriter = csv.writer(csvfile)
